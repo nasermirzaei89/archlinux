@@ -12,6 +12,6 @@ So, these manuals are lighter than the others you have seen.
 
 * [Installation](./installation.md)
 * [Add New User](./addUser.md)
-* [SSH Server](./sshUser.md)
+* [SSH Server](./sshServer.md)
 
 Let me know if you had any problem in these manuals via [Issues](https://github.com/nasermirzaei89/archlinux/issues).
