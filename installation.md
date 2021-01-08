@@ -118,6 +118,13 @@ grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## Enable DHCPCD Service
+
+```bash
+pacman -S dhcpcd
+systemctl enable dhcpcd.service
+```
+
 ## Set Root Password
 
 You need to set root password before finish
