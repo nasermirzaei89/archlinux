@@ -10,6 +10,12 @@ It has been tested on VMWare and a Real Machine.
 
 Insert Arch ISO and boot it.
 
+## Set Network Time Protocol
+
+```bash
+timedatectl set-ntp true
+```
+
 ## Create Partitions
 
 Enter this command to list all disks and partitions:
