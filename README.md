@@ -1,7 +1,7 @@
 # Arch Linux Installation and Usage Guides
 
-After years, I started to use Arch Linux, but in VMWare, because I'm using MacOS on a MacBook Pro.
-I miss linux, but I don't have any hardware to install it on.
+After years, I started to use Arch Linux~~, but in VMWare, because I'm using MacOS on a MacBook Pro.
+I miss linux, but I don't have any hardware to install it on.~~. Finally I bought a machine to install it!
 
 This week I had to use linux because I need to work with Hyperledger Caliper, and I had a problem with a dependency that doesn't work with Darwin.
 So, I installed Arch Linux and use it.
