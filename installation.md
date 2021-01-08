@@ -1,5 +1,13 @@
 # Installation
 
+## Introduction
+
+This is just a minimal installation for Arch Linux.
+
+It has been tested on VMWare and a Real Machine.
+
+## Preparing
+
 Insert Arch ISO and boot it.
 
 ## Create Partitions
@@ -65,6 +73,8 @@ Install the base Arch system:
 pacstrap /mnt base base-devel linux linux-firmware
 ```
 
+> I'm not sure which packages are required!
+
 Generate `fstab` file:
 
 ```bash
@@ -82,7 +92,7 @@ arch-chroot /mnt
 Use your own hostname:
 
 ```bash
-echo myarch > /etc/hostname
+hostnamectl set-hostname myarch
 ```
 
 ```bash
@@ -102,9 +112,17 @@ grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## Set Root Password
+
+You need to set root password before finish
+
+```bash
+passwd
+```
+
 ## Finalizing
 
 ```bash
 exit
-shutdown now
+shutdown -r now
 ```
