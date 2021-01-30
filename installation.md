@@ -10,6 +10,14 @@ It has been tested on VMWare and a Real Machine.
 
 Insert Arch ISO and boot it.
 
+## Verify Boot Mode
+
+if the below command lists without error, then the system is booted in UEFI mode. I just tested this mode.
+
+```bash
+ls /sys/firmware/efi/efivars
+```
+
 ## Set Network Time Protocol
 
 ```bash
