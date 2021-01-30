@@ -30,12 +30,14 @@ Select the disk you wanna partition it:
 cfdisk /dev/sda
 ```
 
+Note: I use `sda`. maybe you need to use `nvme0n1` or something like that if you have m.2 disk.
+
 I created 3 partitions like this:
 
 | Device | Size | Type |
 |--------|------|------|
 | `/dev/sda1` | 512M | Type: EFI System |
-| `/dev/sda2` | Remaining Disk Space | Linux Filesystem |
+| `/dev/sda2` | Remaining Disk Space | Linux root (x86-64) |
 | `/dev/sda3` | 2 x System Total Ram | Linux Swap |
 
 Use `New` and `Type` from menu to do that. Then `Write` and `Quit`.
