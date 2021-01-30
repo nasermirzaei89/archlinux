@@ -50,10 +50,10 @@ I created 3 partitions like this:
 
 Use `New` and `Type` from menu to do that. Then `Write` and `Quit`.
 
-Now format your EFI partition:
+Now format your linux partition:
 
 ```bash
-mkfs.fat -F32 /dev/sda1
+mkfs.ext4 /dev/sda2
 ```
 
 Then make swap on:
@@ -61,12 +61,6 @@ Then make swap on:
 ```bash
 mkswap /dev/sda3
 swapon /dev/sda3
-```
-
-After that, your linux partition:
-
-```bash
-mkfs.ext4 /dev/sda2
 ```
 
 ## Install
@@ -77,16 +71,10 @@ Mount linux partition:
 mount /dev/sda2 /mnt
 ```
 
-Update pacman mirror list:
-
-```bash
-pacman -Syy
-```
-
 Install the base Arch system:
 
 ```bash
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base linux linux-firmware
 ```
 
 > I'm not sure which packages are required!
